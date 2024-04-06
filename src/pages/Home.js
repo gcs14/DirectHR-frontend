@@ -9,12 +9,12 @@ export default function Home() {
     const {id} = useParams()
 
     const loadEmployees=async()=>{
-        const result=await axios.get("http://localhost:8080/employees")
+        const result=await axios.get("http://directhr-env.eba-9d3qncmp.us-east-2.elasticbeanstalk.com/employees")
         setEmployees(result.data);
     };
 
     const deleteEmployee = async (id) =>{
-      await axios.delete(`http://localhost:8080/employee/${id}`)
+      await axios.delete(`http://directhr-env.eba-9d3qncmp.us-east-2.elasticbeanstalk.com/employee/${id}`)
       loadEmployees();
     };
 

@@ -30,12 +30,12 @@ export default function EditEmployee() {
 
     const onSubmit=async(e)=>{
         e.preventDefault();
-        await axios.put(`http://directhr-env.eba-9d3qncmp.us-east-2.elasticbeanstalk.com/employee/${id}`, employee);
+        await axios.put(`http://3.129.24.15:8080/employee/${id}`, employee);
         navigate("/");
     };
 
     const loadEmployee = async () =>{
-        const result = await axios.get(`http://directhr-env.eba-9d3qncmp.us-east-2.elasticbeanstalk.com/employee/${id}`);
+        const result = await axios.get(`http://3.129.24.15:8080/employee/${id}`);
         setEmployee(result.data);
     };
 

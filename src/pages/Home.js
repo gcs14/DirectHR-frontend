@@ -9,12 +9,12 @@ export default function Home() {
     const {id} = useParams()
 
     const loadEmployees=async()=>{
-        const result=await axios.get("http://3.129.24.15:8080/employees")
+        const result=await axios.get("http://3.18.126.132:8080/employees")
         setEmployees(result.data);
     };
 
     const deleteEmployee = async (id) =>{
-      await axios.delete(`http://3.129.24.15:8080/employee/${id}`)
+      await axios.delete(`http://3.18.126.132:8080/employee/${id}`)
       loadEmployees();
     };
 

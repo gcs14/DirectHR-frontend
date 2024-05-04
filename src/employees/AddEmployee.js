@@ -27,7 +27,7 @@ export default function AddEmployee() {
 
     const onSubmit=async(e)=>{
         e.preventDefault();
-        await axios.post("http://directhr-env.eba-9d3qncmp.us-east-2.elasticbeanstalk.com/employee", employee);
+        await axios.post("http://3.129.24.15:8080/employee", employee);
         navigate("/");
     };
 

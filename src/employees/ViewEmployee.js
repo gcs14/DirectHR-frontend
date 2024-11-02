@@ -25,7 +25,7 @@ export default function ViewEmployee() {
     }, []);
 
     const loadEmployee = async () =>{
-        const result = await axios.get(`http://localhost:8080/employee/${id}`);
+        const result = await axios.get(`http://3.128.184.177/employee/${id}`);
         setEmployee(result.data);
     };
 

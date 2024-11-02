@@ -35,7 +35,7 @@ export default function EditEmployee() {
     };
 
     const loadEmployee = async () =>{
-        const result = await axios.get(`http://localhost:8080/employee/${id}`);
+        const result = await axios.get(`http://directhr-env.eba-9d3qncmp.us-east-2.elasticbeanstalk.com/employee/${id}`);
         setEmployee(result.data);
     };
 
@@ -47,7 +47,7 @@ export default function EditEmployee() {
                 
                 <form onSubmit={(e)=>onSubmit(e)}>
                     <div className="mb-3">
-                        <label htmlFor="Name" className="form-label">Full Name</label>
+                        <label htmlform="Name" className="form-label">Full Name</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -58,7 +58,7 @@ export default function EditEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="Username" className="form-label">Username</label>
+                        <label htmlform="Username" className="form-label">Username</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -69,7 +69,7 @@ export default function EditEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="Email" className="form-label">Email</label>
+                        <label htmlform="Email" className="form-label">Email</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -80,7 +80,7 @@ export default function EditEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="Phone Number" className="form-label">Phone Number</label>
+                        <label htmlform="Phone Number" className="form-label">Phone Number</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -91,7 +91,7 @@ export default function EditEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="Position" className="form-label">Position</label>
+                        <label htmlform="Position" className="form-label">Position</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -102,7 +102,7 @@ export default function EditEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="Job Type" className="form-label">Job Type</label>
+                        <label htmlform="Job Type" className="form-label">Job Type</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -113,7 +113,7 @@ export default function EditEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="Salary" className="form-label">Salary</label>
+                        <label htmlform="Salary" className="form-label">Salary</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -124,7 +124,7 @@ export default function EditEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="Hourly" className="form-label">Hourly</label>
+                        <label htmlform="Hourly" className="form-label">Hourly</label>
                         <input 
                             type={"text"} 
                             className="form-control" 

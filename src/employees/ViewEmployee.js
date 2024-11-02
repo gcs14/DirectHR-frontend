@@ -25,7 +25,7 @@ export default function ViewEmployee() {
     }, []);
 
     const loadEmployee = async () =>{
-        const result = await axios.get(`http://directhr-env.eba-9d3qncmp.us-east-2.elasticbeanstalk.com/employee/${id}`);
+        const result = await axios.get(`http://localhost:8080/employee/${id}`);
         setEmployee(result.data);
     };
 
@@ -35,7 +35,7 @@ export default function ViewEmployee() {
       
         if (match) {
           return '(' + match[1] + ') ' + match[2] + '-' + match[3]
-        };
+        }
         return null
       };
 

@@ -27,7 +27,7 @@ export default function AddEmployee() {
 
     const onSubmit=async(e)=>{
         e.preventDefault();
-        await axios.post("http://directhr-env.eba-9d3qncmp.us-east-2.elasticbeanstalk.com/employee", employee);
+        await axios.post("http://localhost:8080/employee", employee);
         navigate("/");
     };
 
@@ -39,7 +39,7 @@ export default function AddEmployee() {
                 
                 <form onSubmit={(e)=>onSubmit(e)}>
                     <div className="mb-3">
-                        <label htmlform="Name" className="form-label">Full Name</label>
+                        <label htmlFor="Name" className="form-label">Full Name</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -50,7 +50,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Username" className="form-label">Username</label>
+                        <label htmlFor="Username" className="form-label">Username</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -61,7 +61,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Email" className="form-label">Email</label>
+                        <label htmlFor="Email" className="form-label">Email</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -72,7 +72,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Phone Number" className="form-label">Phone Number</label>
+                        <label htmlFor="Phone Number" className="form-label">Phone Number</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -83,7 +83,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Birthday" className="form-label">Birthday</label>
+                        <label htmlFor="Birthday" className="form-label">Birthday</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -94,7 +94,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Position" className="form-label">Position</label>
+                        <label htmlFor="Position" className="form-label">Position</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -105,7 +105,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Job Type" className="form-label">Job Type</label>
+                        <label htmlFor="Job Type" className="form-label">Job Type</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -116,7 +116,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Salary" className="form-label">Salary</label>
+                        <label htmlFor="Salary" className="form-label">Salary</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -127,7 +127,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Hourly Wage" className="form-label">Hourly Wage</label>
+                        <label htmlFor="Hourly Wage" className="form-label">Hourly Wage</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
@@ -138,7 +138,7 @@ export default function AddEmployee() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlform="Date Hired" className="form-label">Date Hired</label>
+                        <label htmlFor="Date Hired" className="form-label">Date Hired</label>
                         <input 
                             type={"text"} 
                             className="form-control" 
